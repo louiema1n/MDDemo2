@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button cdl;
     private Button fab;
     private Button tabl;
+    private Button til;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         fab.setOnClickListener(this);
         tabl = (Button) findViewById(R.id.tabl);
         tabl.setOnClickListener(this);
+        til = (Button) findViewById(R.id.til);
+        til.setOnClickListener(this);
     }
 
     @Override
@@ -40,6 +43,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tabl:
                 startActivity(new Intent(this, TabLayoutActivity.class));
+                break;
+            case R.id.til:
+                startActivity(new Intent(this, TextInputLayoutActivity.class));
                 break;
         }
     }

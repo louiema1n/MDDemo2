@@ -25,4 +25,10 @@
             android:layout_height="wrap_content"
             android:text="TabLayout"/>
 
+    <Button
+            android:id="@+id/til"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextInputLayout"/>
+
 </LinearLayout>
